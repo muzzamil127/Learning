@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Tutorial</title>
+</head>
+<body>
+    <div class="container">
+        This is a container
+    </div>
+
+    <script>
+        let obj = {
+            name:"Rana",
+            Ocuupation: "Student",
+            friend: "Asma Yousaf",
+            food: "Biryani"
+        }
+        console.log(obj);
+        
+        //Converted the object into string
+
+        let myobj = JSON.stringify(obj);
+        console.log(myobj);
+
+        //Now we can apply all properties of string on this object
+
+        myobj =  myobj.replace("Rana", "Muzzamil");
+        console.log(myobj);
+
+        let mmyobj = {
+            Name: "Rana",
+            Father: "Ashraf"
+        }
+        console.log(mmyobj);
+
+        mmybj = mmyobj.JSON.stringify(mmyobj);
+
+        //Converting again the string to object
+
+        newobj = JSON.parse(myobj);
+        console.log(newobj);
+
+
+
+    </script>
+</body>
+</html>

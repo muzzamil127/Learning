@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrows in Javascript</title>
+</head>
+<body>
+    <div class="conainer">
+        This is Arrow functions
+    </div >
+    <script>
+        // function greet()
+        // {
+        //     console.log("no do it");
+        // }
+        // greet();
+
+        // greet = ()=>
+        // {
+        //     console.log("im here");
+        // }
+
+        // setInterval(() => {
+        //     // let time = new Date();
+        //     // console.log(time);
+
+        //     console.log("Click here");
+        // }, 3000);
+
+        // let half = b=>b/2;
+
+        // let greet = ()=>console.log("Greetings !");
+        // greet();
+
+        // let sum =(a,b)=>
+        // {
+        //     return a+b;
+        // } 
+
+        let obj1=
+        {
+            greeting : ["Good Morning"],
+            names:["Rana","Muzzamil","Asma","Awais"],
+            speak()
+            {
+                this.names.forEach((student)=>
+                {
+                    console.log(this.greeting + " Hello mister " + student);
+                });
+            }
+        }
+        obj1.speak();
+    </script>
+</body>
+</html>

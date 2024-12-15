@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            margin: 23px 12px;
+            padding: 23px 12px;
+            /* border: 2px solid red; */
+            background-color: grey;
+            /* box-shadow: 12px 10px black; */
+            /* box-shadow: -12px -10px black; */
+            box-shadow: 12px 10px 10px 3px black;
+        }
+        .card h2{
+            /* text-shadow: 1px 1px white; */
+            text-shadow: 1px 1px 2px white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="card-1" class="card">
+            <h2>
+              This is a C# Course
+            </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis officia quo nemo provident quas atque quos laborum eius veritatis, consectetur non ab soluta et nihil rem omnis delectus qui natus.</p>
+        </div>
+        <div id="card-1" class="card">
+            <h2>
+                This is a Html Course
+            </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis officia quo nemo provident quas atque quos laborum eius veritatis, consectetur non ab soluta et nihil rem omnis delectus qui natus.</p>
+        </div>
+        <div id="card-1" class="card">
+            <h2>
+                Card3
+            </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis officia quo nemo provident quas atque quos laborum eius veritatis, consectetur non ab soluta et nihil rem omnis delectus qui natus.</p>
+        </div>
+    </div>
+</body>
+
+</html>

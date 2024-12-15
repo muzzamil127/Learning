@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries and Css</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer'
+            ;
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: red;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+
+            .container {
+                display: grid;
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'footer footer footer footer'
+                ;
+            }
+
+            aside {
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: black;
+            }
+
+            .container {
+                display: grid;
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'footer footer footer footer'
+                ;
+            }
+
+            aside {
+                display: none;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+
+        }
+
+        @media only screen and (min-width:500px) and (max-width:800px) {
+            body {
+                background-color: yellow;
+            }
+
+            .container {
+                display: grid;
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer'
+                ;
+            }
+
+        }
+
+        @media only screen and (min-width:800px) {
+            body {
+                background-color: gray;
+            }
+
+        }
+
+        .bdr {
+            border: 2px solid black;
+            padding: 10px 13px;
+            background-color: wheat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>
+                Home
+            </span>
+            <span>
+                About
+            </span>
+            <span>
+                Contact
+            </span>
+            <span>
+                Services
+            </span>
+        </nav>
+        <section class="bdr">
+            <h2>
+                Learn Css with us
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi omnis commodi animi, sed totam quibusdam quis iusto hic! Eos fugit atque repudiandae ducimus ipsa sapiente, odit maiores voluptatem laudantium facilis, necessitatibus id earum sequi natus. Possimus corporis rerum quas odio iste, praesentium error nulla, non, repudiandae eos libero id expedita consequatur molestias quidem ratione perferendis modi necessitatibus dolorum in quisquam aliquid hic? Voluptatibus repudiandae exercitationem molestiae nam expedita. Eos nemo consequatur harum sequi quibusdam dolores quisquam odit quas facere, nulla corporis voluptates, nihil dolorem incidunt repellendus inventore doloribus ratione beatae? Id illum in eveniet temporibus? Itaque officiis veniam, quibusdam aliquam ut totam, libero esse harum officia inventore dolorum corrupti deleniti quos voluptatem, ex at consequuntur nesciunt eveniet accusamus? Beatae, molestiae!</p>
+        </section>
+        <aside class="bdr">
+            <h1>
+                More About Us
+            </h1>
+        </aside>
+    </div>
+    <footer class="bdr">
+        Copyright Muzzamil 2023
+    </footer>
+</body>
+
+</html>
